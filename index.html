@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidhyathri Tantra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#991b1b', // red-800
+                light: '#b91c1c', // red-700
+                dark: '#7f1d1d', // red-900
+                hover: '#dc2626', // red-600
+              },
+              secondary: '#1f2937', // gray-800
+              background: '#111827', // gray-900
+              surface: '#1f2937', // gray-800
+              text: {
+                primary: '#f3f4f6', // gray-200
+                secondary: '#9ca3af', // gray-400
+              },
+              accent: {
+                  blue: '#3b82f6',
+                  green: '#22c55e',
+                  yellow: '#eab308',
+              }
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'progress': {
+                '0%': { width: '0%' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+              'progress': 'progress 1s ease-out forwards',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+    "axios": "https://aistudiocdn.com/axios@^1.12.2",
+    "recharts": "https://aistudiocdn.com/recharts@^2.14.2",
+    "react-hot-toast": "https://aistudiocdn.com/react-hot-toast@^2.4.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
